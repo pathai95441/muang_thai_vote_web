@@ -1,4 +1,3 @@
-
 import styles from '@/styles/Home.module.css'
 import { Avatar, Button, TextField } from '@mui/material'
 import { AccountCircle } from '@mui/icons-material';
@@ -22,13 +21,21 @@ export default function Login() {
                 style={{ width: "100%" }}
               />
               <InputPassword /> 
-              <Button variant="contained" style={{ marginTop: "12px" }} className={styles.summit_button}>Sign In</Button>
+              <Button
+                variant="contained" 
+                style={{ marginTop: "12px" }} 
+                className={styles.summit_button}
+                onClick={() => router.push(Path.vote)}
+              > Sign In </Button>
             </div>
             <div className={styles.flex_center}>
               <Avatar style={{ height: "24px", width: "24px", marginRight: "8px"}}>
                 <AccountCircle style={{ height: "24px"}} />
               </Avatar>
-              <h5 className={styles.register_title} onClick={() => router.push(Path.register)}> Register </h5>
+              <h5 
+                className={styles.register_title} 
+                onClick={() => router.push(Path.register)}
+              > Register </h5>
             </div>
         </div>
       </main>

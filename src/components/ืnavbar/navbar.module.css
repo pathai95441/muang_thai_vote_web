@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    padding: 12px;
+    background-color: aliceblue;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.navbar {
+    width: 1024px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu_title {
+    color: white;
+}
+
+.menu {
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 8px;
+    margin-right: 8px;
+    border-radius: 12px;
+    background-color: #78c444;
+}
+
+.group_left {
+    display: flex;
+}
+
+.group_right {
+    display: flex;
+    align-items: center;
+}

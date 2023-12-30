@@ -1,0 +1,17 @@
+.container {
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.card_space {
+    margin-bottom: 12px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.tools {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}

@@ -8,10 +8,11 @@
 }
 
 .card {
-    max-width: 400px;
-    background-color: azure;
-    border-radius: 10px;
-    padding: 18px;
+  max-width: 400px;
+  background-color: azure;
+  border-radius: 10px;
+  padding: 18px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .card_content {

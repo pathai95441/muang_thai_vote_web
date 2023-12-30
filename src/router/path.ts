@@ -1,5 +1,6 @@
 export const Path = {
     signIn: "/",
     register: "/register",
-    vote: "/vote"
+    vote: "/vote",
+    manageCandidate: "/manageCandidate"
 }

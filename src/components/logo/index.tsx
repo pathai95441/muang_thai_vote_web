@@ -1,11 +1,15 @@
-
+import { CSSProperties } from 'react'
 import styles from './logo.module.css'
 
-export default function MTLLogo() {
+interface MTLLogoProps {
+  style?: CSSProperties
+}
+
+export default function MTLLogo({ style }: MTLLogoProps) {
   return (
-    <div className={styles.card}> 
-        <img src="/MTLLogo.svg" className={styles.card_logo} />
-        <h1 className={styles.card_title}> Vote </h1> 
+    <div className={styles.card} style={style}> 
+        <img src="/MTLLogo.svg" className={styles.card_logo} style={style}/>
+        <h1 className={styles.card_title} style={style}> Vote </h1> 
     </div>
   )
 }

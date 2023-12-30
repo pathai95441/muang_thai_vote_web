@@ -1,0 +1,43 @@
+.container {
+    max-width: 350px;
+    max-height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card_header {
+    padding: 12px;
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+}
+
+.label_candidate {
+    /* background-color: rgb(165, 252, 255); */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.count_vote {
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card_content {
+    overflow: auto;
+    padding: 12px;
+    padding-left: 18px;
+    height: 140px;
+}
+
+.is_voted {
+    color: rgb(62, 172, 117);
+}
+
+.icon_vote {
+    cursor: pointer;
+}
