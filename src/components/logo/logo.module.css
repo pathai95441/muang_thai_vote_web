@@ -1,0 +1,22 @@
+.card {
+    max-width: 400px;
+    max-width: 500px;
+    background-color: azure;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.card_logo {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.card_title {
+    font-size: 36px;
+    background: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }

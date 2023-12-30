@@ -1,0 +1,50 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem;
+  min-height: 100vh;
+}
+
+.card {
+    max-width: 400px;
+    background-color: azure;
+    border-radius: 10px;
+    padding: 18px;
+}
+
+.card_content {
+  margin-top: 10px;
+  line-height: 4px;
+  max-width: 250px;
+  flex-direction: column;
+  display: grid;
+  place-items: center;
+  margin-bottom: 10px;
+}
+
+.summit_button {
+  width: 100%;
+  height: 48px;
+  background: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+}
+
+.register_title {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #344DDB;
+}
+
+.card_title {
+  font-size: 36px;
+  background: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.flex_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
