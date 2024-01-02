@@ -25,20 +25,22 @@ interface ICreateCandidateDataModalProps {
     refetch: () => void
 }
 
+let defaultValue = {
+    candidateDescription: "",
+    candidateID: "",
+    candidateName: "",
+    voteScore: 0,
+}
+
 export default function CreateCandidateDataModal({ isOpen, onClose, refetch }: ICreateCandidateDataModalProps) {
     const [validated, setValidated] = React.useState<boolean>(false)
-    const [candidateData, setCandidateData] = React.useState<ICandidateInfo>({
-        candidateDescription: "",
-        candidateID: "",
-        candidateName: "",
-        voteScore: 0,
-    })
+    const [candidateData, setCandidateData] = React.useState<ICandidateInfo>(defaultValue)
     const { alertError, alertSuccess } = React.useContext(AppContext);
 
     const handleUpdateCandidateData = () => {
         setValidated(true)
         if(candidateData.candidateDescription && candidateData.candidateName ){
-            CreateCandidateDataAPI(candidateData).then(() => {alertSuccess?.("Create Candidate Data Success");refetch()}).catch((e: any) => alertError?.(JSON.stringify(e?.message), e?.response?.status))
+            CreateCandidateDataAPI(candidateData).then(() => {alertSuccess?.("Create Candidate Data Success");setCandidateData(defaultValue);refetch()}).catch((e: any) => alertError?.(JSON.stringify(e?.message), e?.response?.status))
         }
         onClose()
     }
