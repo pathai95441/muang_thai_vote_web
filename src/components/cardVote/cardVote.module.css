@@ -1,6 +1,6 @@
 .container {
     max-width: 350px;
-    max-height: 200px;
+    max-height: 260px;
     background-color: white;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -34,10 +34,35 @@
     height: 140px;
 }
 
+.card_footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px;
+    align-items: center;
+    padding-left: 18px;
+    /* height: 120px; */
+}
+
 .is_voted {
     color: rgb(62, 172, 117);
 }
 
-.icon_vote {
+.icon {
     cursor: pointer;
+}
+
+.vote_button {
+    background-color: rgb(255, 255, 190);
+    padding: 6px;
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.vote_button_disable {
+    background-color: rgb(201, 201, 201);
+    padding: 6px;
+    cursor: not-allowed;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }

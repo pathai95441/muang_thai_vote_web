@@ -15,3 +15,11 @@
     justify-content: space-between;
     margin-bottom: 20px;
 }
+
+.container_loading {
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}

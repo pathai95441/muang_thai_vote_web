@@ -1,0 +1,44 @@
+.container {
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.card_space {
+    margin-bottom: 12px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.tools {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.container_loading {
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+
+.create_button {
+    display: flex;
+    justify-content: space-around;
+    width: 250px; 
+    padding: 12px;
+    margin-bottom: 18px;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 12px;
+    background: rgb(0,255,244);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.create_button:hover {
+    background: rgb(0,255,244);
+    color: white;
+    background: linear-gradient(90deg, rgba(0,255,244,0.8911939775910365) 47%, rgba(0,212,255,1) 80%);
+}

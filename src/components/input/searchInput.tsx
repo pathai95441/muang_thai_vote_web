@@ -3,7 +3,13 @@ import InputBase from '@mui/material/InputBase';
 import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
 
-export default function SearchInput() {
+interface ISearchInputProps {
+  value?: string
+  onChange: (e: string) => void
+  onSubmit: () => void
+}
+
+export default function SearchInput({ value, onChange, onSubmit }: ISearchInputProps) {
   return (
     <Paper
       component="form"
@@ -12,9 +18,22 @@ export default function SearchInput() {
       <InputBase
         sx={{ ml: 1, flex: 1 }}
         placeholder="Search Candidate"
+        value={value}
+        onChange={(e) => {
+          onChange(e.target.value)
+        }}
         inputProps={{ 'aria-label': 'search Candidate' }}
+        onKeyDown={(e) => { 
+          if(e.keyCode == 13){ 
+            e.preventDefault();
+         }
+          if (e.key === 'Enter') {
+            e.preventDefault();
+            onSubmit()
+          }
+        }}
       />
-      <IconButton type="button" sx={{ p: '10px' }} aria-label="search">
+      <IconButton type="button" sx={{ p: '10px' }} aria-label="search" onClick={() => {onSubmit()}} >
         <SearchIcon />
       </IconButton>
     </Paper>

@@ -13,7 +13,7 @@
 }
 
 .menu_title {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .menu {
@@ -22,7 +22,11 @@
     margin-left: 8px;
     margin-right: 8px;
     border-radius: 12px;
-    background-color: #78c444;
+}
+
+.menu:hover {
+    background: rgb(248,252,252);
+    background: linear-gradient(90deg, rgba(248,252,252,1) 33%, rgba(208,255,255,1) 100%);
 }
 
 .group_left {
